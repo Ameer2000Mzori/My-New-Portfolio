@@ -7,6 +7,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .navlinks {
   display: flex;
 }
@@ -16,6 +17,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .navlinks ul li {
   display: block;
   padding: 1rem;
@@ -40,6 +42,7 @@ body {
   .navbar {
     justify-content: space-between;
   }
+
   .menubtn {
     display: block;
   }
@@ -68,9 +71,14 @@ body {
     backdrop-filter: blur(1px);
   }
 
+  .navlinks.active {
+    display: block;
+  }
+
   .navlinks ul {
     list-style: none;
   }
+
   .navlinks ul li {
     text-align: start;
   }
@@ -79,11 +87,5 @@ body {
     font-size: 25px;
     color: white;
     text-decoration: none;
-  }
-  .navlinks {
-    display: none;
-  }
-  .navlinks.active {
-    display: block;
   }
 }
