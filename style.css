@@ -60,7 +60,7 @@ body {
 
   .navlinks {
     position: fixed;
-    display: flex;
+    display: none;
     text-align: center;
     align-items: center;
     width: 100%;
