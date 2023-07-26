@@ -157,6 +157,10 @@ body {
   margin: 15px;
 }
 
+.skill-box:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(141, 138, 139));
+}
+
 .continator {
   padding-left: 24px;
   height: 450px;
