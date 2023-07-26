@@ -1,3 +1,92 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+
+.navlinks {
+  display: flex;
+}
+
+.navlinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlinks ul li {
+  display: block;
+  padding: 1rem;
+}
+
+.navlinks ul li a {
+  color: #6070ffe5;
+  text-decoration: none;
+}
+
+.navbrand {
+  padding: 10px, 12px;
+  color: #6070ffe5;
+}
+
+.menubtn {
+  padding: 8px;
+  display: none;
+}
+
+@media (max-width: 475px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
+  .menubtn.deactive {
+    display: none;
+  }
+
+  .close-menubtn {
+    position: relative;
+    left: 150px;
+    top: 1rem;
+    margin: 1rem;
+  }
+
+  .navlinks {
+    position: fixed;
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(98, 114, 255, 0.8);
+    backdrop-filter: blur(1px);
+  }
+
+  .navlinks.active {
+    display: block;
+  }
+
+  .navlinks ul {
+    list-style: none;
+  }
+
+  .navlinks ul li {
+    text-align: start;
+  }
+
+  .navlinks ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
 }
