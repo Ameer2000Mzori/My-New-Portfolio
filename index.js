@@ -43,4 +43,3 @@ SkillsWarp.addEventListener("click", () => {
   SkillsWarp.classList.toggle("activated");
   SkillsOnBtn.classList.toggle("activated");
 });
-
