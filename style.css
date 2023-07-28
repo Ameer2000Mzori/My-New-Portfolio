@@ -112,6 +112,16 @@ body {
   max-width: 50ch;
 }
 
+#icon-links{
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+
+#icon-links:active {
+  background-color: rgb(180, 193, 250);
+}
+
 @media (max-width: 475px) {
   .mainmenu {
     height: 718px;
@@ -381,10 +391,13 @@ body {
 }
 
 .about-me-btn {
-  color: blue;
+  color: #396DF2;
   border-style: solid;
-  border-color: blue;
+  border-color: #6070FF;
   border-radius: 6px;
+  width: 162px;
+  margin-top: 20px;
+  height: 48px;
   background-color: transparent;
   padding: 15px;
 }
@@ -394,7 +407,7 @@ body {
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-radius: 6px;
-  background-color: blue;
+  background-color: #4053FC;
   padding: 15px;
 }
 
@@ -403,7 +416,7 @@ body {
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-radius: 6px;
-  background-color: rgb(131, 131, 131);
+  background-color: #2230D2;
   padding: 15px;
 }
 
@@ -420,10 +433,10 @@ body {
   margin: 24px;
   border-style: solid;
   border-top: none;
-  border-width: 1px;
+  border-width: 2px;
   border-left: none;
   border-right: none;
-  border-color: gray;
+  border-color: #DFE1E6;
 }
 
 .languages-warp.activated {
@@ -640,10 +653,10 @@ body {
   margin: 24px;
   border-style: solid;
   border-top: none;
-  border-width: 1px;
+  border-width: 2px;
   border-left: none;
   border-right: none;
-  border-color: gray;
+  border-color: #DFE1E6;
 }
 
 .frameworks-warp.activated {
@@ -830,10 +843,10 @@ body {
   margin: 24px;
   border-style: solid;
   border-top: none;
-  border-width: 1px;
+  border-width: 2px;
   border-left: none;
   border-right: none;
-  border-color: gray;
+  border-color: #DFE1E6;
 }
 
 .Skills-warp.activated {
