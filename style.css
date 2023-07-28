@@ -1013,17 +1013,17 @@ body {
   }
 }
 
-.footer-wrap{
+.footer-wrap {
   background-color: white;
   padding: 0;
   margin: 0;
   top: 0;
 }
 
-.footer{
+.footer {
   display: flex;
   height: 846px;
-  border-radius: 150px 0 0 0 ;
+  border-radius: 150px 0 0 0;
   background-color: #6070ff;
   background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1134582468767383642/contact_form_background_shapes.png);
   background-repeat: no-repeat;
@@ -1031,33 +1031,33 @@ body {
   background-position: center;
   text-align: center;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 24px;
 }
 
-.footer-text{
+.footer-text {
   display: flex;
   flex-direction: column;
 }
 
-.footer-form{
+.footer-form {
   display: flex;
   flex-direction: column;
 }
 
-.footer-h1{
+.footer-h1 {
   color: white;
   font-size: 40px;
 }
-.footer-p{
+
+.footer-p {
   color: white;
   font-size: 20px;
   max-width: 600px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.name-box-footer{
+.name-box-footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   height: 48px;
@@ -1070,7 +1070,8 @@ body {
   margin-bottom: 15px;
   margin-top: 55px;
 }
-.email-box-footer{
+
+.email-box-footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   padding-left: 14px;
@@ -1083,7 +1084,7 @@ body {
   margin-bottom: 20px;
 }
 
-.text-area-footer{
+.text-area-footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 17px;
   color: rgb(0, 0, 0);
@@ -1099,21 +1100,20 @@ body {
   resize: none;
 }
 
-.footer-btn{
+.footer-btn {
   position: relative;
   left: 140px;
   height: 48px;
   width: 142px;
   font-size: 17px;
   background-color: white;
-  color: #6070FF;
+  color: #6070ff;
   border-style: none;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
 }
 
-.footer-btn:hover{
-
+.footer-btn:hover {
   height: 48px;
   width: 142px;
   background-color: #051df8;
@@ -1123,8 +1123,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.footer-btn:active{
-
+.footer-btn:active {
   height: 48px;
   width: 142px;
   background-color: #cecfcf;
@@ -1134,12 +1133,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media(max-width:700px){
-
-  .footer{
+@media (max-width: 700px) {
+  .footer {
     display: flex;
     height: 779px;
-    border-radius: 150px 0 0 0 ;
+    border-radius: 150px 0 0 0;
     background-color: #6070ff;
     background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1134479294006042674/contact_form_shapes-mobile2x.png);
     background-repeat: no-repeat;
@@ -1147,12 +1145,11 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 24px;
   }
 
-  .name-box-footer{
+  .name-box-footer {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
     height: 48px;
@@ -1164,7 +1161,8 @@ body {
     margin-bottom: 15px;
     margin-top: 55px;
   }
-  .email-box-footer{
+
+  .email-box-footer {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 20px;
     height: 48px;
@@ -1175,7 +1173,8 @@ body {
     border-width: 1px;
     margin-bottom: 20px;
   }
-  .text-area-footer{
+
+  .text-area-footer {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 17px;
     color: rgb(0, 0, 0);
@@ -1190,15 +1189,14 @@ body {
     resize: none;
   }
 
-  .footer-btn{
+  .footer-btn {
     height: 48px;
     width: 142px;
     font-size: 17px;
     background-color: white;
-    color: #6070FF;
+    color: #6070ff;
     border-style: none;
     border-radius: 8px;
     font-family: "Poppins", sans-serif;
   }
-
 }
