@@ -39,15 +39,6 @@ body {
   display: none;
 }
 
-.skill-p {
-  max-width: 540px;
-  margin: 1rem;
-}
-
-.skill-box-h5 {
-  color: black;
-}
-
 @media (max-width: 475px) {
   .navbar {
     justify-content: space-between;
@@ -166,6 +157,18 @@ body {
   margin: 15px;
 }
 
+.skill-p {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 540px;
+  margin: 1rem;
+}
+
+.skill-box-h5 {
+  position: relative;
+  top: 3px;
+  color: black;
+}
+
 .skill-box:hover {
   filter: drop-shadow(0 0 0.75rem rgb(141, 138, 139));
 }
@@ -232,8 +235,8 @@ body {
 }
 
 .skill-lang {
-  background-color: rgba(125, 125, 250, 0.397);
-  color: rgb(87, 87, 250);
+  background-color: #ebebff;
+  color: #6070ff;
   height: 24px;
   padding: 5px;
   margin: 5px;
@@ -242,36 +245,42 @@ body {
 }
 
 .skill-btn {
-  height: 48px;
+  height: 38px;
   width: 20%;
+  margin: 35px;
   padding: 12px;
   border-radius: 8px;
   border-style: solid;
   border-width: 1px;
-  border-color: blue;
+  border-color: #6070ff;
   background-color: transparent;
-  color: blue;
-  margin: 5px;
+  color: #396df2;
   margin-left: 0;
 }
 
 .skill-btn:hover {
-  background-color: blue;
+  background-color: #6070ff;
   color: white;
+  box-shadow: 2px 2px 25px #4053fc;
 }
 
 .skill-btn:active {
-  background-color: rgb(175, 175, 175);
+  background-color: #2230d2;
   color: white;
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 775px) {
   .skills-continator {
     height: 2788px;
     padding: 114px, 24px, 114px, 24px;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .continator-4 {
+    padding-left: 10px;
   }
 
   .skill-box {
@@ -284,9 +293,17 @@ body {
     border: solid;
     border-color: rgba(114, 114, 114, 0.26);
     border-width: 1px;
-    height: 600px;
+    height: 650px;
     width: 327px;
     border-radius: 16px;
+  }
+
+  .skill-p {
+    text-align: start;
+    position: relative;
+    right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 540px;
   }
 
   .skill-list {
@@ -316,36 +333,34 @@ body {
   }
 
   .skill-lang {
-    background-color: rgba(125, 125, 250, 0.397);
-    color: rgb(87, 87, 250);
-    height: 24px;
-    padding: 5px;
-    margin: 5px;
+    background-color: #ebebff;
+    color: #6070ff;
     margin-left: 0;
     border-radius: 10px;
   }
 
   .skill-btn {
-    height: 48px;
+    height: 42px;
     width: 35%;
+    margin: 10px;
     padding: 12px;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
-    border-color: blue;
+    border-color: #6070ff;
     background-color: transparent;
-    color: blue;
-    margin: 5px;
+    color: #396df2;
     margin-left: 0;
   }
 
   .skill-btn:hover {
-    background-color: blue;
+    background-color: #6070ff;
     color: white;
+    box-shadow: 2px 2px 25px #4053fc;
   }
 
   .skill-btn:active {
-    background-color: rgb(175, 175, 175);
+    background-color: #2230d2;
     color: white;
   }
 
