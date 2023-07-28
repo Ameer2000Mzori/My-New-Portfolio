@@ -39,6 +39,15 @@ body {
   display: none;
 }
 
+.skill-p {
+  max-width: 540px;
+  margin: 1rem;
+}
+
+.skill-box-h5 {
+  color: black;
+}
+
 @media (max-width: 475px) {
   .navbar {
     justify-content: space-between;
