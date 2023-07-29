@@ -278,10 +278,12 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  .continator{
+
+  .continator {
     margin: 0;
     padding-left: 10px;
   }
+
   .continator-4 {
     padding-left: 10px;
   }
@@ -301,18 +303,17 @@ body {
     border-radius: 16px;
   }
 
-  
-  #skill-img-1{
+  #skill-img-1 {
     position: relative;
     right: 5px;
   }
-  
-  #skill-img-2{
+
+  #skill-img-2 {
     position: relative;
     right: 10px;
   }
 
-  #skill-img-4{
+  #skill-img-4 {
     position: relative;
     right: 10px;
   }
