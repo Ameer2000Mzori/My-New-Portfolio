@@ -174,7 +174,7 @@ body {
 }
 
 .continator {
-  padding-left: 24px;
+  margin-left: 15px;
   height: 450px;
 }
 
@@ -278,7 +278,10 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-
+  .continator{
+    margin: 0;
+    padding-left: 10px;
+  }
   .continator-4 {
     padding-left: 10px;
   }
@@ -296,6 +299,22 @@ body {
     height: 600px;
     width: 327px;
     border-radius: 16px;
+  }
+
+  
+  #skill-img-1{
+    position: relative;
+    right: 5px;
+  }
+  
+  #skill-img-2{
+    position: relative;
+    right: 10px;
+  }
+
+  #skill-img-4{
+    position: relative;
+    right: 10px;
   }
 
   .skill-p {
