@@ -229,6 +229,7 @@ body {
 }
 
 .skills-list-lang {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
@@ -237,7 +238,6 @@ body {
 .skill-lang {
   background-color: #ebebff;
   color: #6070ff;
-  height: 24px;
   padding: 5px;
   margin: 5px;
   margin-left: 0;
@@ -247,7 +247,7 @@ body {
 .skill-btn {
   height: 38px;
   width: 20%;
-  margin: 35px;
+  margin: 25px;
   padding: 12px;
   border-radius: 8px;
   border-style: solid;
@@ -293,7 +293,7 @@ body {
     border: solid;
     border-color: rgba(114, 114, 114, 0.26);
     border-width: 1px;
-    height: 650px;
+    height: 600px;
     width: 327px;
     border-radius: 16px;
   }
@@ -343,6 +343,7 @@ body {
     height: 42px;
     width: 35%;
     margin: 10px;
+    font-size: 15px;
     padding: 12px;
     border-radius: 8px;
     border-style: solid;
