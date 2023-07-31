@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f9;
   font-family: "Poppins", sans-serif;
@@ -5,97 +9,12 @@ body {
   margin: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px;
-}
-
-.navlinks {
-  display: flex;
-}
-
-.navlinks ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navlinks ul li {
-  display: block;
-  padding: 1rem;
-}
-
-.navlinks ul li a {
-  color: #6070ffe5;
-  text-decoration: none;
-}
-
-.navbrand {
-  padding: 10px, 12px;
-  color: #6070ffe5;
-}
-
-.menubtn {
-  padding: 8px;
-  display: none;
-}
-
-@media (max-width: 475px) {
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .menubtn {
-    display: block;
-  }
-
-  .menubtn.deactive {
-    display: none;
-  }
-
-  .close-menubtn {
-    position: relative;
-    left: 150px;
-    top: 1rem;
-    margin: 1rem;
-  }
-
-  .navlinks {
-    position: fixed;
-    display: none;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    background: rgba(98, 114, 255, 0.8);
-    backdrop-filter: blur(1px);
-  }
-
-  .navlinks.active {
-    display: block;
-  }
-
-  .navlinks ul {
-    list-style: none;
-  }
-
-  .navlinks ul li {
-    text-align: start;
-  }
-
-  .navlinks ul li a {
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-  }
+body.active {
+  overflow-y: hidden;
 }
 
 .mainmenu {
-  height: 718px;
+  height: 878px;
   background-color: white;
   background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1131570253491617873/Header_bg2x.png);
   background-size: 100%;
@@ -107,8 +26,9 @@ body {
   justify-content: center;
   text-align: start;
   align-items: start;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-top: 70px;
 }
 
 .mainmenu-p {
@@ -129,6 +49,7 @@ body {
     text-align: start;
     align-items: start;
     padding: 10px;
+    margin-top: 60px;
   }
 
   .letsconnect-img {
