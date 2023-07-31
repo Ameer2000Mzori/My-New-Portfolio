@@ -96,6 +96,7 @@ body.active {
   text-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
 }
 
 .languages-list.activated {
