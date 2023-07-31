@@ -1,7 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  background-color: #f7f7f9;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 .navbar {
