@@ -1,18 +1,18 @@
-// open burgermenu btn
-let toggleHandler = document.getElementsByClassName("menubtn")[0];
-let navLinks = document.getElementsByClassName("navlinks")[0];
+// // open burgermenu btn
+// let toggleHandler = document.getElementsByClassName("menubtn")[0];
+// let navLinks = document.getElementsByClassName("navlinks")[0];
 
-toggleHandler.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  toggleHandler.classList.add("deactive");
-});
+// toggleHandler.addEventListener("click", () => {
+//   navLinks.classList.toggle("active");
+//   toggleHandler.classList.add("deactive");
+// });
 
-// close burgermenu btn
-let closeMenuHandler = document.getElementsByClassName("close-menubtn")[0];
-closeMenuHandler.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  toggleHandler.classList.remove("deactive");
-});
+// // close burgermenu btn
+// let closeMenuHandler = document.getElementsByClassName("close-menubtn")[0];
+// closeMenuHandler.addEventListener("click", () => {
+//   navLinks.classList.toggle("active");
+//   toggleHandler.classList.remove("deactive");
+// });
 
 // open and close btn languages-list menu
 let languagesWarp = document.getElementsByClassName("languages-warp")[0];
@@ -39,8 +39,7 @@ let SkillsWarp = document.getElementsByClassName("Skills-warp")[0];
 let SkillsList = document.getElementsByClassName("Skills-list")[0];
 let SkillsOnBtn = document.getElementsByClassName("Skills-on-btn")[0];
 SkillsWarp.addEventListener("click", () => {
-    SkillsList.classList.toggle("activated");
+  SkillsList.classList.toggle("activated");
   SkillsWarp.classList.toggle("activated");
   SkillsOnBtn.classList.toggle("activated");
 });
-

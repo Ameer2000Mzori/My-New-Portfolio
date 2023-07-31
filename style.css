@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f9;
   font-family: "Poppins", sans-serif;
@@ -5,414 +9,11 @@ body {
   margin: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+body.active {
+  overflow-y: hidden;
 }
 
-.navlinks {
-  display: flex;
-}
-
-.navlinks ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navlinks ul li {
-  display: block;
-  padding: 1rem;
-}
-
-.navlinks ul li a {
-  color: #6070ffe5;
-  text-decoration: none;
-}
-
-.navbrand {
-  padding: 10px, 12px;
-  color: #6070ffe5;
-}
-
-.menubtn {
-  padding: 8px;
-  display: none;
-}
-
-@media (max-width: 475px) {
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .menubtn {
-    display: block;
-  }
-
-  .menubtn.deactive {
-    display: none;
-  }
-
-  .close-menubtn {
-    position: relative;
-    left: 150px;
-    top: 1rem;
-    margin: 1rem;
-  }
-
-  .navlinks {
-    position: fixed;
-    display: none;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    background: rgba(98, 114, 255, 0.8);
-    backdrop-filter: blur(1px);
-  }
-
-  .navlinks.active {
-    display: block;
-  }
-
-  .navlinks ul {
-    list-style: none;
-  }
-
-  .navlinks ul li {
-    text-align: start;
-  }
-
-  .navlinks ul li a {
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.mainmenu {
-  height: 718px;
-  background-color: white;
-  background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1131570253491617873/Header_bg2x.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0 0 0 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  align-items: start;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.mainmenu-p {
-  max-width: 50ch;
-}
-
-#icon-links {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-#icon-links:active {
-  background-color: rgb(180, 193, 250);
-}
-
-@media (max-width: 475px) {
-  .mainmenu {
-    height: 718px;
-    background-color: white;
-    background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1133367153580589067/header-shapesmobile.png);
-    background-size: 100%;
-    background-position: center;
-    border-radius: 0 0 0 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    align-items: start;
-    padding: 10px;
-  }
-
-  .letsconnect-img {
-    width: 120px;
-  }
-
-  #icon-links:active {
-    background-color: rgb(180, 193, 250);
-  }
-}
-
-.skills-continator {
-  height: 2288px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: start;
-  align-items: center;
-}
-
-.skill-box {
-  display: flex;
-  justify-content: center;
-  width: 1156px;
-  height: 446px;
-  background-color: white;
-  border-radius: 15px;
-  padding: 24px;
-  margin: 15px;
-}
-
-.skill-p {
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 540px;
-  margin: 1rem;
-}
-
-.skill-box-h5 {
-  position: relative;
-  top: 3px;
-  color: black;
-}
-
-.skill-box:hover {
-  filter: drop-shadow(0 0 0.75rem rgb(141, 138, 139));
-}
-
-.continator {
-  margin-left: 15px;
-  height: 450px;
-}
-
-.skill-list {
-  padding: 0;
-  margin: 0;
-  color: rgba(134, 134, 136, 0.76);
-}
-
-.skill-list ul {
-  display: flex;
-  text-align: start;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  color: rgba(134, 134, 136, 0.76);
-}
-
-.skill-list ul h5 {
-  font-size: larger;
-}
-
-.skill-list ul li {
-  margin: 0;
-  margin-left: 25px;
-}
-
-.skill-list ul li h5 {
-  font-size: larger;
-}
-
-.skill-img {
-  width: 544px;
-  height: 448px;
-}
-
-#skill-img-2 {
-  position: relative;
-  float: right;
-  left: 230px;
-}
-
-#skill-img-4 {
-  float: right;
-}
-
-.continator-4 {
-  float: left;
-  top: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.skills-list-lang {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.skill-lang {
-  background-color: #ebebff;
-  color: #6070ff;
-  padding: 5px;
-  margin: 5px;
-  margin-left: 0;
-  border-radius: 10px;
-}
-
-.skill-btn {
-  height: 38px;
-  width: 20%;
-  margin: 25px;
-  padding: 12px;
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #6070ff;
-  background-color: transparent;
-  color: #396df2;
-  margin-left: 0;
-}
-
-.skill-btn:hover {
-  background-color: #6070ff;
-  color: white;
-  box-shadow: 2px 2px 25px #4053fc;
-}
-
-.skill-btn:active {
-  background-color: #2230d2;
-  color: white;
-}
-
-@media (max-width: 775px) {
-  .skills-continator {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 2788px;
-    padding: 114px, 24px, 114px, 24px;
-    margin: 0;
-    margin-top: 140px;
-  }
-
-  .continator {
-    margin: 0;
-    padding-left: 10px;
-  }
-
-  .continator-4 {
-    padding-left: 10px;
-  }
-
-  .skill-box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 16px;
-    margin-top: 58px;
-    background-color: white;
-    border: solid;
-    border-color: rgba(114, 114, 114, 0.26);
-    border-width: 1px;
-    height: 600px;
-    width: 327px;
-    border-radius: 16px;
-  }
-
-  #skill-img-1 {
-    position: relative;
-    right: 5px;
-  }
-
-  #skill-img-2 {
-    position: relative;
-    right: 10px;
-  }
-
-  #skill-img-4 {
-    position: relative;
-    right: 10px;
-  }
-
-  .skill-p {
-    text-align: start;
-    position: relative;
-    right: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 540px;
-  }
-
-  .skill-list {
-    padding: 0;
-    margin: 0;
-    color: rgba(134, 134, 136, 0.76);
-  }
-
-  .skill-list ul {
-    display: flex;
-    text-align: start;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    color: rgba(134, 134, 136, 0.76);
-  }
-
-  .skill-list ul li {
-    margin: 0;
-    margin-left: 25px;
-  }
-
-  .skills-list-lang {
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-
-  .skill-lang {
-    background-color: #ebebff;
-    color: #6070ff;
-    margin-left: 0;
-    border-radius: 10px;
-  }
-
-  .skill-btn {
-    height: 42px;
-    width: 35%;
-    margin: 10px;
-    font-size: 15px;
-    padding: 12px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #6070ff;
-    background-color: transparent;
-    color: #396df2;
-    margin-left: 0;
-  }
-
-  .skill-btn:hover {
-    background-color: #6070ff;
-    color: white;
-    box-shadow: 2px 2px 25px #4053fc;
-  }
-
-  .skill-btn:active {
-    background-color: #2230d2;
-    color: white;
-  }
-
-  .skill-img {
-    width: 310px;
-    padding-left: 10px;
-    height: auto;
-  }
-
-  .skill-list ul h5 {
-    font-size: small;
-  }
-
-  .skill-list ul li h5 {
-    font-size: small;
-  }
-}
-
-.about-me-continator {
+#about-me-continator {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -500,8 +101,8 @@ body {
 .languages-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 25px;
+  position: static;
+  left: 14px;
 }
 
 .languages-list ul {
@@ -511,7 +112,7 @@ body {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -523,32 +124,6 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
-}
-
-@keyframes onlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-  }
-}
-
-@keyframes offlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-    display: 100%;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-    display: 0%;
-  }
 }
 
 .languages-list ul li {
@@ -598,38 +173,8 @@ body {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes offbtn {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes langimg {
-  0% {
-    transform: rotate(100deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @media (max-width: 760px) {
-  .about-me-continator {
+  #about-me-continator {
     display: flex;
     flex-direction: column;
     padding-top: 144px;
@@ -653,7 +198,7 @@ body {
   .about-me-lang-wrap {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: static;
     right: 23px;
     padding-top: 20px;
     padding-left: 0;
@@ -668,7 +213,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -726,8 +271,8 @@ body {
 .frameworks-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 25px;
+  position: static;
+  left: 14px;
 }
 
 .frameworks-list ul {
@@ -737,7 +282,7 @@ body {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -749,32 +294,6 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
-}
-
-@keyframes onlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-  }
-}
-
-@keyframes offlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-    display: 100%;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-    display: 0%;
-  }
 }
 
 .frameworks-list ul li {
@@ -824,36 +343,6 @@ body {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes offbtn {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes langimg {
-  0% {
-    transform: rotate(100deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @media (max-width: 760px) {
   .frameworks-list ul {
     list-style: none;
@@ -862,7 +351,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -920,7 +409,7 @@ body {
 .Skills-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: static;
   left: 25px;
 }
 
@@ -931,7 +420,7 @@ body {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -943,32 +432,6 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
-}
-
-@keyframes onlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-  }
-}
-
-@keyframes offlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-    display: 100%;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-    display: 0%;
-  }
 }
 
 .Skills-list ul li {
@@ -1018,36 +481,6 @@ body {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes offbtn {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes langimg {
-  0% {
-    transform: rotate(100deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @media (max-width: 760px) {
   .Skills-list ul {
     list-style: none;
@@ -1056,7 +489,7 @@ body {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
