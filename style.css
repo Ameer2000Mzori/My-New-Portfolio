@@ -2,142 +2,7 @@ body {
   background-color: #f7f7f9;
   font-family: "Poppins", sans-serif;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navlinks {
-  display: flex;
-}
-
-.navlinks ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navlinks ul li {
-  display: block;
-  padding: 1rem;
-}
-
-.navlinks ul li a {
-  color: #6070ffe5;
-  text-decoration: none;
-}
-
-.navbrand {
-  padding: 10px, 12px;
-  color: #6070ffe5;
-}
-
-.menubtn {
-  padding: 8px;
-  display: none;
-}
-
-@media (max-width: 475px) {
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .menubtn {
-    display: block;
-  }
-
-  .menubtn.deactive {
-    display: none;
-  }
-
-  .close-menubtn {
-    position: relative;
-    left: 150px;
-    top: 1rem;
-    margin: 1rem;
-  }
-
-  .navlinks {
-    position: fixed;
-    display: none;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    background: rgba(98, 114, 255, 0.8);
-    backdrop-filter: blur(1px);
-  }
-
-  .navlinks.active {
-    display: block;
-  }
-
-  .navlinks ul {
-    list-style: none;
-  }
-
-  .navlinks ul li {
-    text-align: start;
-  }
-
-  .navlinks ul li a {
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.mainmenu {
-  height: 718px;
-  background-color: white;
-  background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1131570253491617873/Header_bg2x.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0 0 0 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  align-items: start;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.mainmenu-p {
-  max-width: 50ch;
-}
-
-@media (max-width: 475px) {
-  .mainmenu {
-    height: 718px;
-    background-color: white;
-    background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1133367153580589067/header-shapesmobile.png);
-    background-size: 100%;
-    background-position: center;
-    border-radius: 0 0 0 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    align-items: start;
-    padding: 10px;
-  }
-
-  .letsconnect-img {
-    width: 120px;
-  }
-
-  #icon-links:active {
-    background-color: rgb(180, 193, 250);
-  }
-}
-
-.skills-continator {
+#skills-continator {
   height: 2288px;
   display: flex;
   justify-content: center;
@@ -157,6 +22,13 @@ body {
   margin: 15px;
 }
 
+.skill-box:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4053fc;
+  box-shadow: 0 0 14px 14px rgba(201, 201, 255, 0.76);
+}
+
 .skill-p {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 540px;
@@ -164,13 +36,9 @@ body {
 }
 
 .skill-box-h5 {
-  position: relative;
+  position: static;
   top: 3px;
   color: black;
-}
-
-.skill-box:hover {
-  filter: drop-shadow(0 0 0.75rem rgb(141, 138, 139));
 }
 
 .continator {
@@ -212,7 +80,7 @@ body {
 }
 
 #skill-img-2 {
-  position: relative;
+  position: static;
   float: right;
   left: 230px;
 }
@@ -270,7 +138,7 @@ body {
 }
 
 @media (max-width: 775px) {
-  .skills-continator {
+  #skills-continator {
     height: 2788px;
     padding: 114px, 24px, 114px, 24px;
     margin-top: 140px;
@@ -304,23 +172,23 @@ body {
   }
 
   #skill-img-1 {
-    position: relative;
+    position: static;
     right: 5px;
   }
 
   #skill-img-2 {
-    position: relative;
+    position: static;
     right: 10px;
   }
 
   #skill-img-4 {
-    position: relative;
+    position: static;
     right: 10px;
   }
 
   .skill-p {
     text-align: start;
-    position: relative;
+    position: static;
     right: 15px;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 540px;
@@ -386,6 +254,7 @@ body {
   }
 
   .skill-img {
+    position: static;
     width: 310px;
     padding-left: 10px;
     height: auto;
