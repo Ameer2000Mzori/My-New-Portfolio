@@ -121,3 +121,61 @@ body.active {
     text-decoration: none;
   }
 }
+
+.mainmenu {
+  height: 878px;
+  background-color: white;
+  background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1131570253491617873/Header_bg2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: start;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-top: 70px;
+}
+
+.menubtn {
+  display: none;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.close-menubtn {
+  display: none;
+}
+
+.mainmenu-p {
+  max-width: 50ch;
+}
+
+@media (max-width: 475px) {
+  .mainmenu {
+    height: 718px;
+    background-color: white;
+    background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1133367153580589067/header-shapesmobile.png);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: start;
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  .letsconnect-img {
+    width: 120px;
+  }
+
+  #icon-links:active {
+    background-color: rgb(180, 193, 250);
+  }
+}
