@@ -32,7 +32,7 @@ body.active {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  padding: 24px;
+  padding: 8px;
 }
 
 .footer-text {
