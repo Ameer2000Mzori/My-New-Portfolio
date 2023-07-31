@@ -4,6 +4,9 @@ body {
   padding: 0;
   margin: 0;
 }
+body.active {
+  overflow-y: hidden;
+}
 
 .navbar {
   display: flex;
@@ -106,10 +109,9 @@ body {
   justify-content: center;
   text-align: start;
   align-items: start;
-  padding-left: 100px;
+  padding-left: 440px;
   padding-right: 100px;
 }
-
 .mainmenu-p {
   max-width: 50ch;
 }
@@ -159,6 +161,13 @@ body {
   margin: 15px;
 }
 
+.skill-box:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4053fc;
+  filter: drop-shadow(0 0 0.75rem rgb(133, 131, 132));
+}
+
 .skill-p {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 540px;
@@ -166,13 +175,9 @@ body {
 }
 
 .skill-box-h5 {
-  position: relative;
+  position: static;
   top: 3px;
   color: black;
-}
-
-.skill-box:hover {
-  filter: drop-shadow(0 0 0.75rem rgb(141, 138, 139));
 }
 
 .continator {
@@ -214,7 +219,7 @@ body {
 }
 
 #skill-img-2 {
-  position: relative;
+  position: static;
   float: right;
   left: 230px;
 }
@@ -306,23 +311,23 @@ body {
   }
 
   #skill-img-1 {
-    position: relative;
+    position: static;
     right: 5px;
   }
 
   #skill-img-2 {
-    position: relative;
+    position: static;
     right: 10px;
   }
 
   #skill-img-4 {
-    position: relative;
+    position: static;
     right: 10px;
   }
 
   .skill-p {
     text-align: start;
-    position: relative;
+    position: static;
     right: 15px;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 540px;
@@ -388,6 +393,7 @@ body {
   }
 
   .skill-img {
+    position: static;
     width: 310px;
     padding-left: 10px;
     height: auto;
@@ -490,8 +496,8 @@ body {
 .languages-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 25px;
+  position: static;
+  left: 14px;
 }
 
 .languages-list ul {
@@ -643,7 +649,7 @@ body {
   .about-me-lang-wrap {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: static;
     right: 23px;
     padding-top: 20px;
     padding-left: 0;
@@ -716,8 +722,8 @@ body {
 .frameworks-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 25px;
+  position: static;
+  left: 14px;
 }
 
 .frameworks-list ul {
@@ -910,7 +916,7 @@ body {
 .Skills-list.activated {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: static;
   left: 25px;
 }
 
@@ -1268,7 +1274,6 @@ body {
   }
 
   .footer-btn {
-    position: relative;
     position: static;
     height: 48px;
     width: 142px;
