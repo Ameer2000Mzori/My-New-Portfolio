@@ -1,17 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f9;
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
+
 body.active {
   overflow-y: hidden;
 }
 
 .navbar {
   display: flex;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
+  padding: 8px;
+  filter: drop-shadow(0 0 0.75rem rgb(107, 107, 107));
 }
 
 .navlinks {
@@ -40,13 +51,20 @@ body.active {
 }
 
 .menubtn {
+  display: none;
   padding: 8px;
+  margin-right: 15px;
+}
+
+.close-menubtn {
   display: none;
 }
 
 @media (max-width: 475px) {
   .navbar {
     justify-content: space-between;
+    position: none;
+    filter: none;
   }
 
   .menubtn {
@@ -64,15 +82,23 @@ body.active {
     margin: 1rem;
   }
 
+  .close-menubtn.active {
+    display: block;
+    position: relative;
+    left: 310px;
+    top: 1rem;
+    margin: 1rem;
+  }
+
   .navlinks {
     position: fixed;
     display: none;
     text-align: center;
     align-items: center;
     width: 100%;
-    left: 0;
-    bottom: 0;
     height: 100%;
+    bottom: 0;
+    left: 0;
     background: rgba(98, 114, 255, 0.8);
     backdrop-filter: blur(1px);
   }
@@ -109,9 +135,11 @@ body.active {
   justify-content: center;
   text-align: start;
   align-items: start;
-  padding-left: 440px;
-  padding-right: 100px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-top: 70px;
 }
+
 .mainmenu-p {
   max-width: 50ch;
 }
@@ -130,6 +158,7 @@ body.active {
     text-align: start;
     align-items: start;
     padding: 10px;
+    margin-top: 60px;
   }
 
   .letsconnect-img {
@@ -165,7 +194,7 @@ body.active {
   border-style: solid;
   border-width: 1px;
   border-color: #4053fc;
-  filter: drop-shadow(0 0 0.75rem rgb(133, 131, 132));
+  box-shadow: 0 0 14px 14px rgba(201, 201, 255, 0.76);
 }
 
 .skill-p {
@@ -507,7 +536,7 @@ body.active {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -519,32 +548,6 @@ body.active {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
-}
-
-@keyframes onlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-  }
-}
-
-@keyframes offlanguagelist {
-  0% {
-    position: relative;
-    bottom: 400px;
-    display: 100%;
-  }
-
-  100% {
-    position: relative;
-    bottom: 0;
-    display: 0%;
-  }
 }
 
 .languages-list ul li {
@@ -594,36 +597,6 @@ body.active {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes offbtn {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes langimg {
-  0% {
-    transform: rotate(100deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @media (max-width: 760px) {
   #about-me-continator {
     display: flex;
@@ -664,7 +637,7 @@ body.active {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -733,7 +706,7 @@ body.active {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -747,31 +720,35 @@ body.active {
   animation-direction: alternate;
 }
 
-@keyframes onlanguagelist {
+/* @keyframes onlanguagelist {
   0% {
-    position: relative;
+    position: static;
+
     bottom: 400px;
   }
 
   100% {
-    position: relative;
+    position: static;
+
     bottom: 0;
   }
 }
 
 @keyframes offlanguagelist {
   0% {
-    position: relative;
+    position: static;
+
     bottom: 400px;
     display: 100%;
   }
 
   100% {
-    position: relative;
+    position: static;
+
     bottom: 0;
     display: 0%;
   }
-}
+} */
 
 .frameworks-list ul li {
   display: flex;
@@ -820,35 +797,47 @@ body.active {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
+/* @keyframes onbtn {
   0% {
+    position: static;
+
     transform: rotate(0);
   }
 
   100% {
+    position: static;
+
     transform: rotate(90deg);
   }
 }
 
 @keyframes offbtn {
   0% {
+    position: static;
+
     transform: rotate(90deg);
   }
 
   100% {
+    position: static;
+
     transform: rotate(0deg);
   }
 }
 
 @keyframes langimg {
   0% {
+    position: static;
+
     transform: rotate(100deg);
   }
 
   100% {
+    position: static;
+
     transform: rotate(0deg);
   }
-}
+} */
 
 @media (max-width: 760px) {
   .frameworks-list ul {
@@ -858,7 +847,7 @@ body.active {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -927,7 +916,7 @@ body.active {
   text-align: center;
   align-items: center;
   padding: 0;
-  position: relative;
+  position: static;
   animation-name: offlanguagelist;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -941,31 +930,35 @@ body.active {
   animation-direction: alternate;
 }
 
-@keyframes onlanguagelist {
+/* @keyframes onlanguagelist {
   0% {
-    position: relative;
+    position: static;
+
     bottom: 400px;
   }
 
   100% {
-    position: relative;
+    position: static;
+
     bottom: 0;
   }
 }
 
 @keyframes offlanguagelist {
   0% {
-    position: relative;
+    position: static;
+
     bottom: 400px;
     display: 100%;
   }
 
   100% {
-    position: relative;
+    position: static;
+
     bottom: 0;
     display: 0%;
   }
-}
+} */
 
 .Skills-list ul li {
   display: flex;
@@ -1014,35 +1007,45 @@ body.active {
   animation-direction: alternate;
 }
 
-@keyframes onbtn {
+/* @keyframes onbtn {
   0% {
+    position: static;
     transform: rotate(0);
   }
 
   100% {
+    position: static;
     transform: rotate(90deg);
   }
 }
 
 @keyframes offbtn {
   0% {
+    position: static;
+
     transform: rotate(90deg);
   }
 
   100% {
+    position: static;
+
     transform: rotate(0deg);
   }
 }
 
 @keyframes langimg {
   0% {
+    position: static;
+
     transform: rotate(100deg);
   }
 
   100% {
+    position: static;
+
     transform: rotate(0deg);
   }
-}
+} */
 
 @media (max-width: 760px) {
   .Skills-list ul {
@@ -1052,7 +1055,7 @@ body.active {
     text-align: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    position: static;
     animation-name: offlanguagelist;
     animation-duration: 1s;
     animation-fill-mode: forwards;
