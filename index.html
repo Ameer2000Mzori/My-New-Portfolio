@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  
   </head>
   <body>
     <nav class="navbar">
@@ -25,13 +26,18 @@
   </nav>
   
   <header class="mainmenu">
+    <div class="header-text-wrap">
     <h1 class="mainmenu-h1">I'm Ameer. <br> Glad to see you!</h1>
     <p class="mainmenu-p">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
     <img class="letsconnect-img" src="images\letsconnect-img.png" alt="">
     <div class="letsconnect-links">
-      <a href="#"><img id="icon-links" class="github" src="\icons\github-icon.png" alt=""></a>
+      <a href="#"><img id="icon-links" class="twitter"  src="\icons\twitter.png" alt=""></a>
       <a href="#"><img id="icon-links" class="linkedin"  src="\icons\linkedin-icon.png" alt=""></a>
+      <a href="#"><img id="icon-links" class="meduim" src="\icons\medium.png" alt=""></a>
+      <a href="#"><img id="icon-links" class="github" src="\icons\github-icon.png" alt=""></a>
+      <a href="#"><img id="icon-links" class="angellist" src="\icons\angellist.png" alt=""></a>
     </div>
+  </div>
   </header>
   
   <div id="skills-continator">
@@ -52,6 +58,7 @@
       <p class="skill-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
       <div class="skills-list-lang">
       <div class="skill-lang">HTML</div>
+      <div class="skill-lang">Ruby on rails</div>
       <div class="skill-lang">CSS</div>
       <div class="skill-lang">JavaScript</div>
     </div>
@@ -76,6 +83,7 @@
       <p class="skill-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
       <div class="skills-list-lang">
       <div class="skill-lang">HTML</div>
+      <div class="skill-lang">Ruby on rails</div>
       <div class="skill-lang">CSS</div>
       <div class="skill-lang">JavaScript</div>
     </div>
@@ -98,6 +106,7 @@
       <p class="skill-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
       <div class="skills-list-lang">
       <div class="skill-lang">HTML</div>
+      <div class="skill-lang">Ruby on rails</div>
       <div class="skill-lang">CSS</div>
       <div class="skill-lang">JavaScript</div>
     </div>
@@ -120,6 +129,7 @@
       <p class="skill-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
       <div class="skills-list-lang">
       <div class="skill-lang">HTML</div>
+      <div class="skill-lang">Ruby on rails</div>
       <div class="skill-lang">CSS</div>
       <div class="skill-lang">JavaScript</div>
     </div>
@@ -138,15 +148,19 @@
       Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
       <img class="letsconnect-img" src="images\letsconnect-img.png" alt="">
       <div class="letsconnect-links">
-        <a href="#"><img id="icon-links" class="github" src="\icons\github-icon.png" alt=""></a>
+        <a href="#"><img id="icon-links" class="twitter"  src="\icons\twitter.png" alt=""></a>
         <a href="#"><img id="icon-links" class="linkedin"  src="\icons\linkedin-icon.png" alt=""></a>
+        <a href="#"><img id="icon-links" class="meduim" src="\icons\medium.png" alt=""></a>
+        <a href="#"><img id="icon-links" class="github" src="\icons\github-icon.png" alt=""></a>
+        <a href="#"><img id="icon-links" class="angellist" src="\icons\angellist.png" alt=""></a>
       </div>
+
 
       <button class="about-me-btn">Get My Resume</button>
     </div>
     <div class="about-me-lang-wrap">
       <div class="languages-warp">
-        <div>languages</div>
+        <div class="about-header-text">languages</div>
         <img class="languages-on-btn" src="\icons\offbtn.svg" alt="">
       </div>
       <div class="languages-list">
@@ -158,7 +172,7 @@
       </div>
 
       <div class="frameworks-warp">
-        <div>frameworks</div>
+        <div class="about-header-text" >frameworks</div>
         <img class="frameworks-on-btn" src="\icons\offbtn.svg" alt="">
       </div>
       <div class="frameworks-list">
@@ -170,7 +184,7 @@
 
     </div>
       <div class="Skills-warp">
-        <div>Skills</div>
+        <div class="about-header-text" >Skills</div>
         <img class="Skills-on-btn" src="\icons\offbtn.svg" alt="">
       </div>
       <div class="Skills-list">
@@ -193,8 +207,8 @@
                 <p class="footer-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
               </div>
               <form action="mailto:ameermzori496@gmail.com" method="GET" class="footer-form">
-                <input class="name-box-footer" placeholder="Your full name" value="Lorem Ipsum" type="name" required>
-                <input class="email-box-footer" placeholder="email address" value="loremipsum@gmail.com" type="email"required>
+                <input class="name-box-footer" placeholder="Your full name"  type="name" required>
+                <input class="email-box-footer" placeholder="email address"  type="email"required>
                 <textarea class="text-area-footer"  placeholder="Write your message here..." name="textarea"  id="" cols="30" rows="10"></textarea>
                 <button type="submit" class="footer-btn" type="button">Get in touch</button>
               </form>
