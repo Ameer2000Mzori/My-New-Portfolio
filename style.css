@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: #f7f7f9;
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -41,11 +40,15 @@ body.active {
 }
 
 .navlinks ul li a {
-  color: #6070ffe5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #344563;
   text-decoration: none;
 }
 
 .navbrand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   padding: 10px, 12px;
   color: #6070ffe5;
 }
@@ -60,7 +63,7 @@ body.active {
   display: none;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
     position: none;
@@ -116,6 +119,8 @@ body.active {
   }
 
   .navlinks ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 25px;
     color: white;
     text-decoration: none;
