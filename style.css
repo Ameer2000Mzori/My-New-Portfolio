@@ -4,13 +4,201 @@ html {
 
 body {
   background-color: #f7f7f9;
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 body.active {
   overflow-y: hidden;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  filter: drop-shadow(0 0 0.75rem rgb(107, 107, 107));
+}
+
+.navlinks {
+  display: flex;
+}
+
+.navlinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlinks ul li {
+  display: block;
+  padding: 1rem;
+}
+
+.navlinks ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #344563;
+  text-decoration: none;
+}
+
+.navbrand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 10px, 12px;
+  color: #6070ffe5;
+}
+
+.menubtn {
+  display: none;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.close-menubtn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    position: none;
+    filter: none;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
+  .menubtn.deactive {
+    display: none;
+  }
+
+  .close-menubtn {
+    position: relative;
+    left: 150px;
+    top: 1rem;
+    margin: 1rem;
+  }
+
+  .close-menubtn.active {
+    display: block;
+    position: relative;
+    left: 310px;
+    top: 1rem;
+    margin: 1rem;
+  }
+
+  .navlinks {
+    position: fixed;
+    display: none;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(98, 114, 255, 0.8);
+    backdrop-filter: blur(1px);
+  }
+
+  .navlinks.active {
+    display: block;
+  }
+
+  .navlinks ul {
+    list-style: none;
+  }
+
+  .navlinks ul li {
+    text-align: start;
+  }
+
+  .navlinks ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.mainmenu {
+  height: 878px;
+  background-color: white;
+  background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1131570253491617873/Header_bg2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: start;
+  padding: 5% 15%;
+  margin-top: 70px;
+}
+
+.header-text-wrap {
+  margin-left: 50px;
+}
+
+.mainmenu-h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: start;
+}
+
+.mainmenu-p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  max-width: 80ch;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: start;
+}
+
+.letsconnect-links {
+  margin-top: 22px;
+}
+
+#icon-links {
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .mainmenu {
+    height: 718px;
+    background-color: white;
+    background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1133367153580589067/header-shapesmobile.png);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: start;
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+  .header-text-wrap {
+    margin-left: 20px;
+  }
+
+  .letsconnect-img {
+    width: 120px;
+  }
 }
 
 #skills-continator {
@@ -33,23 +221,35 @@ body.active {
   margin: 15px;
 }
 
+.skill-h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
 .skill-box:hover {
   border-style: solid;
   border-width: 1px;
-  border-color: #4053fc;
+  border-color: #a7aeff;
   box-shadow: 0 0 14px 14px rgba(201, 201, 255, 0.76);
 }
 
 .skill-p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   max-width: 540px;
-  margin: 1rem;
 }
 
 .skill-box-h5 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 500;
+  max-width: 540px;
   position: static;
   top: 3px;
   color: black;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .continator {
@@ -73,12 +273,14 @@ body.active {
 }
 
 .skill-list ul h5 {
-  font-size: larger;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .skill-list ul li {
   margin: 0;
   margin-left: 25px;
+  padding: 0;
 }
 
 .skill-list ul li h5 {
@@ -115,19 +317,25 @@ body.active {
 }
 
 .skill-lang {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   background-color: #ebebff;
   color: #6070ff;
   padding: 5px;
   margin: 5px;
   margin-left: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
   border-radius: 10px;
 }
 
 .skill-btn {
-  height: 38px;
-  width: 20%;
-  margin: 25px;
-  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  height: 48px;
+  width: 126px;
   border-radius: 8px;
   border-style: solid;
   border-width: 1px;
@@ -135,6 +343,12 @@ body.active {
   background-color: transparent;
   color: #396df2;
   margin-left: 0;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
 }
 
 .skill-btn:hover {
@@ -148,7 +362,7 @@ body.active {
   color: white;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 1275px) {
   #skills-continator {
     height: 2788px;
     padding: 114px, 24px, 114px, 24px;
@@ -198,10 +412,11 @@ body.active {
   }
 
   .skill-p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     text-align: start;
     position: static;
     right: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     max-width: 540px;
   }
 
@@ -232,24 +447,34 @@ body.active {
   }
 
   .skill-lang {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     background-color: #ebebff;
     color: #6070ff;
+    padding: 5px;
+    margin: 5px;
     margin-left: 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
     border-radius: 10px;
   }
 
   .skill-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     height: 42px;
     width: 35%;
     margin: 10px;
     font-size: 15px;
-    padding: 12px;
+    padding: 6px;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
     border-color: #6070ff;
     background-color: transparent;
-    color: #396df2;
+    color: #6070ff;
     margin-left: 0;
   }
 
