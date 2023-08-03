@@ -20,7 +20,7 @@ body.active {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  padding: 8px;
+  padding-left: 12px;
   filter: drop-shadow(0 0 0.75rem rgb(107, 107, 107));
 }
 
@@ -49,6 +49,8 @@ body.active {
 .navbrand {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  position: relative;
+  right: 160px;
   padding: 10px, 12px;
   color: #6070ffe5;
 }
@@ -83,6 +85,15 @@ body.active {
     left: 150px;
     top: 1rem;
     margin: 1rem;
+  }
+
+  .navbrand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 20px;
+    padding: 10px, 12px;
+    color: #6070ffe5;
   }
 
   .close-menubtn.active {
@@ -141,7 +152,7 @@ body.active {
   text-align: start;
   align-items: start;
   padding: 5% 15%;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .header-text-wrap {
@@ -189,7 +200,7 @@ body.active {
     text-align: start;
     align-items: start;
     padding: 10px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .header-text-wrap {
@@ -212,18 +223,20 @@ body.active {
 
 .skill-box {
   display: flex;
-  justify-content: center;
   width: 1156px;
   height: 446px;
   background-color: white;
   border-radius: 15px;
-  padding: 24px;
+  padding: 24px 24px;
   margin: 15px;
 }
 
 .skill-h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .skill-box:hover {
@@ -253,7 +266,7 @@ body.active {
 }
 
 .continator {
-  margin-left: 15px;
+  margin-left: 55px;
   height: 450px;
 }
 
@@ -265,6 +278,7 @@ body.active {
 
 .skill-list ul {
   display: flex;
+  height: 12px;
   text-align: start;
   align-items: center;
   padding: 0;
@@ -299,7 +313,9 @@ body.active {
 }
 
 #skill-img-4 {
+  position: static;
   float: right;
+  margin-left: 55px;
 }
 
 .continator-4 {
@@ -385,7 +401,7 @@ body.active {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 16px;
+    padding: 20px 12px;
     margin-top: 58px;
     background-color: white;
     border: solid;
@@ -398,17 +414,25 @@ body.active {
 
   #skill-img-1 {
     position: static;
+    float: none;
     right: 5px;
   }
 
   #skill-img-2 {
     position: static;
+    float: none;
     right: 10px;
   }
 
   #skill-img-4 {
     position: static;
+    float: none;
     right: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .continator-4 {
+    float: none;
   }
 
   .skill-p {
@@ -421,9 +445,9 @@ body.active {
   }
 
   .skill-list {
+    color: rgba(134, 134, 136, 0.76);
     padding: 0;
     margin: 0;
-    color: rgba(134, 134, 136, 0.76);
   }
 
   .skill-list ul {
