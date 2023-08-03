@@ -20,7 +20,7 @@ body.active {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  padding: 8px;
+  padding-left: 12px;
   filter: drop-shadow(0 0 0.75rem rgb(107, 107, 107));
 }
 
@@ -49,6 +49,8 @@ body.active {
 .navbrand {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  position: relative;
+  right: 160px;
   padding: 10px, 12px;
   color: #6070ffe5;
 }
@@ -83,6 +85,15 @@ body.active {
     left: 150px;
     top: 1rem;
     margin: 1rem;
+  }
+
+  .navbrand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 20px;
+    padding: 10px, 12px;
+    color: #6070ffe5;
   }
 
   .close-menubtn.active {
