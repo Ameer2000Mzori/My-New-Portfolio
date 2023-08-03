@@ -998,3 +998,219 @@ body.active {
     text-decoration: none;
   }
 }
+
+#footer-wrap {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.footer {
+  display: flex;
+  height: 846px;
+  border-radius: 150px 0 0 0;
+  background-color: #6070ff;
+  background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1134582468767383642/contact_form_background_shapes.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+}
+
+.footer-p {
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  max-width: 550px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.name-box-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  height: 48px;
+  padding-left: 14px;
+  width: 427px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #cfd8dc;
+  border-width: 1px;
+  margin-bottom: 15px;
+  margin-top: 55px;
+}
+
+.email-box-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 14px;
+  height: 48px;
+  width: 427px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #cfd8dc;
+  border-width: 1px;
+  margin-bottom: 20px;
+}
+
+.text-area-footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #b3bac5;
+  height: 170px;
+  width: 413px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #cfd8dc;
+  border-width: 1px;
+  margin-bottom: 20px;
+  resize: none;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.footer-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 140px;
+  height: 48px;
+  width: 142px;
+  font-size: 17px;
+  background-color: white;
+  color: #6070ff;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.footer-btn:hover {
+  font-family: "Poppins", sans-serif;
+  height: 48px;
+  width: 142px;
+  background-color: #051df8;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.footer-btn:active {
+  height: 48px;
+  width: 142px;
+  background-color: #cecfcf;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    height: 779px;
+    border-radius: 100px 0 0 0;
+    background-color: #6070ff;
+    background-image: url(https://cdn.discordapp.com/attachments/955344972939419679/1134479294006042674/contact_form_shapes-mobile2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .name-box-footer {
+    font-size: 20px;
+    height: 48px;
+    width: 327px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #cfd8dc;
+    border-width: 1px;
+    margin-bottom: 15px;
+    margin-top: 55px;
+  }
+
+  .footer-h1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 40px;
+  }
+
+  .footer-p {
+    color: white;
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .email-box-footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    height: 48px;
+    width: 327px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #cfd8dc;
+    border-width: 1px;
+    margin-bottom: 20px;
+  }
+
+  .text-area-footer {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    height: 170px;
+    width: 334px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #cfd8dc;
+    border-width: 1px;
+    margin-bottom: 20px;
+    resize: none;
+  }
+
+  .footer-btn {
+    position: static;
+    height: 48px;
+    width: 142px;
+    right: 100px;
+    font-size: 17px;
+    background-color: white;
+    color: #6070ff;
+    border-style: none;
+    border-radius: 8px;
+  }
+}
