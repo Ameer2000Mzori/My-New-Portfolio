@@ -395,6 +395,7 @@ body.active {
 
   .continator-4 {
     padding-left: 10px;
+    float: none;
   }
 
   .skill-box {
@@ -430,9 +431,6 @@ body.active {
     right: 10px;
     padding: 0;
     margin: 0;
-  }
-  .continator-4 {
-    float: none;
   }
 
   .skill-p {
