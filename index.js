@@ -2,13 +2,13 @@
 const toggleHandler = document.getElementsByClassName("menubtn")[0];
 const navLinks = document.getElementsByClassName("navlinks")[0];
 const closeMenuBtn = document.getElementsByClassName("close-menubtn")[0];
-const body = document.querySelector("body");
 
 toggleHandler.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   toggleHandler.classList.add("deactive");
   body.classList.add("active");
   closeMenuBtn.classList.add("active");
+  console.log("clicked me");
 });
 
 // close burgermenu btn
