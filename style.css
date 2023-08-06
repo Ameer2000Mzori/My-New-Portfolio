@@ -527,10 +527,6 @@ body.active {
   }
 }
 
-#skills-continator.active {
-  filter: blur(1px);
-}
-
 .dynamic-skill-card {
   position: fixed;
   width: 1156px;
