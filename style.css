@@ -1808,9 +1808,6 @@ body.active {
     padding: 0;
     margin: 0;
   }
-  .continator-4 {
-    float: none;
-  }
 
   .skill-p {
     font-family: "Poppins", sans-serif;
@@ -2076,9 +2073,11 @@ body.active {
 .languages-img {
   margin: 1rem;
 }
+
 .languages-on-btn {
   display: show;
 }
+
 .languages-on-btn.activated {
   transform: rotate(90deg);
 }
@@ -2220,6 +2219,7 @@ body.active {
 .frameworks-on-btn {
   display: show;
 }
+
 .frameworks-on-btn.activated {
   transform: rotate(90deg);
 }
@@ -2337,6 +2337,7 @@ body.active {
 .Skills-on-btn {
   display: show;
 }
+
 .Skills-on-btn.activated {
   transform: rotate(90deg);
 }
