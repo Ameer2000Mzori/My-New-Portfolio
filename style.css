@@ -1089,9 +1089,11 @@ body.active {
 .languages-img {
   margin: 1rem;
 }
+
 .languages-on-btn {
   display: show;
 }
+
 .languages-on-btn.activated {
   transform: rotate(90deg);
 }
@@ -1233,6 +1235,7 @@ body.active {
 .frameworks-on-btn {
   display: show;
 }
+
 .frameworks-on-btn.activated {
   transform: rotate(90deg);
 }
@@ -1350,6 +1353,7 @@ body.active {
 .Skills-on-btn {
   display: show;
 }
+
 .Skills-on-btn.activated {
   transform: rotate(90deg);
 }
@@ -1522,6 +1526,11 @@ body.active {
   border-style: none;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
+}
+
+.error-form {
+  font-family: "Poppins", sans-serif;
+  color: red;
 }
 
 @media (max-width: 768px) {

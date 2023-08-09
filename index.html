@@ -199,20 +199,23 @@
 
           <!-- footer  -->
           <section id="footer-wrap">
-              <div class="footer" >
-              <div class="footer-text">
-                <h1 class="footer-h1">Contact me</h1>
-                <p class="footer-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
-              </div>
-              <form action="https://formspree.io/f/mnqkjwqb" method="POST" class="footer-form">
-                <input type="text" name="name" class="name-box-footer" placeholder="Your full name" required >
-                <input type="email" name="email" class="email-box-footer" placeholder="email address" required >
-                <textarea class="text-area-footer"  placeholder="Write your message here..." name="textarea"  id="" cols="30" rows="10"></textarea>
-                <button type="submit" class="footer-btn" type="button">Get in touch</button>
-              </form>
-
+            <div class="footer" >
+            <div class="footer-text">
+              <h1 class="footer-h1">Contact me</h1>
+              <p class="footer-p">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
             </div>
-          </section>
+            <form action="https://formspree.io/f/mnqkjwqb" method="POST" class="footer-form">
+              <input type="text" name="name" class="name-box-footer" placeholder="Your full name" required >
+              <input type="email" name="email" class="email-box-footer" placeholder="email address" required >
+              <textarea class="text-area-footer"  placeholder="Write your message here..." name="textarea"  id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="footer-btn" type="button">Get in touch</button>
+              <p class="error-form"></p>
+            </form>
+
+          </div>
+        </section>
+        <script src="./validation.js"></script>
+        <script src="./localStorage.js"></script>
         </div>  <script src="./DataObject.js"></script>
     <script src="./index.js"></script>
   </body>
