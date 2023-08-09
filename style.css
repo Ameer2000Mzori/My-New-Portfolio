@@ -1134,6 +1134,11 @@ body.active {
   font-family: "Poppins", sans-serif;
 }
 
+.error-form {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
+
 @media (max-width: 768px) {
   .footer {
     display: flex;
