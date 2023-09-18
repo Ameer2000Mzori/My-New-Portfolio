@@ -695,6 +695,11 @@ body.active {
   border-width: 1px;
 }
 
+.url-source-btn {
+  color: #6070ff;
+  text-decoration: none;
+}
+
 .dynamic-source-btn:active {
   color: #2581d6;
   border-color: #2581d6;
