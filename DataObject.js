@@ -79,8 +79,8 @@ function showlist(index) {
 </div>
 
 <div class='dynamic-buttons-wrap'>
-<button class="dynamic-live-btn" type='button'><img class='exportsmall' src='/icons/exportsmall.svg'><a class='url-source-btn' href='${names[index].liveUrl}'>See live </a> </button>
-<button class="dynamic-source-btn" type='button'  ><a class='url-source-btn' href='${names[index].sourceUrl}'>See source </a> <img class='githubsmall' src='/icons/githubsmall.png'></button>
+<button class="dynamic-live-btn" type='button'><img class='exportsmall' src='icons/exportsmall.svg'><a class='url-source-btn' href='${names[index].liveUrl}'>See live </a> </button>
+<button class="dynamic-source-btn" type='button'  ><a class='url-source-btn' href='${names[index].sourceUrl}'>See source </a> <img class='githubsmall' src='icons/githubsmall.png'></button>
 </div>
 </div>
 </div>
