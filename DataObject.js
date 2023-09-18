@@ -47,7 +47,7 @@ function showlist(index) {
   <div class="dynamic-continator">
   <div class='title-and-btn'>
   <h1  class="dynamic-skill-h1">${names[index].name}</h1>
-  <button  class='closeBtn' onclick='closemnuBtn()'><img src="icons/IconCancel.svg" alt=""></button>
+  <button  class='closeBtn' onclick='closemnuBtn()'><img src="icons/Iconcancel.svg" alt=""></button>
   </div>
   <div class="dynamic-skill-list">
   <ul>
