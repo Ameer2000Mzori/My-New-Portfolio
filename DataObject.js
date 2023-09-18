@@ -3,7 +3,7 @@ let names = [
     name: "Global Summit",
     description:
       "I created this project as part of my Microverse bootcamp. Its goal was to replicate an existing website, allowing me to gain practical web development experience and improve my skills.",
-    image: "/images/SnapshootPortfolio1.png",
+    image: "images/SnapshootPortfolio1.png",
     skill: "",
     liveUrl:'https://ameer2000mzori.github.io/Global-Summit-Website/',
     sourceUrl: 'https://github.com/Ameer2000Mzori/Global-Summit-Website',
@@ -12,7 +12,7 @@ let names = [
     name: "Multi-Post Stories",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: "/images/SnapshootPortfolio2.svg.svg",
+    image: "images/SnapshootPortfolio2.svg.svg",
     skill: "Ruby on rails",
     liveUrl:'https://ameer2000mzori.github.io/Global-Summit-Website/',
     sourceUrl: 'https://github.com/Ameer2000Mzori/Global-Summit-Website',
@@ -21,7 +21,7 @@ let names = [
     name: "Tonic",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: "/images/SnapshootPortfolio3.svg.svg",
+    image: "images/SnapshootPortfolio3.svg.svg",
     skill: "Ruby on rails",
     liveUrl:'https://ameer2000mzori.github.io/Global-Summit-Website/',
     sourceUrl: 'https://github.com/Ameer2000Mzori/Global-Summit-Website',
@@ -30,7 +30,7 @@ let names = [
     name: "Multi-Post Stories",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: "/images/SnapshootPortfolio4.svg.svg",
+    image: "images/SnapshootPortfolio4.svg.svg",
     skill: "Ruby on rails",
     liveUrl:'https://ameer2000mzori.github.io/Global-Summit-Website/',
     sourceUrl: 'https://github.com/Ameer2000Mzori/Global-Summit-Website',
@@ -79,8 +79,8 @@ function showlist(index) {
 </div>
 
 <div class='dynamic-buttons-wrap'>
-<button class="dynamic-live-btn" type='button'><img class='exportsmall' src='/icons/exportsmall.svg'><a class='url-source-btn' href='${names[index].liveUrl}'>See live </a> </button>
-<button class="dynamic-source-btn" type='button'  ><a class='url-source-btn' href='${names[index].sourceUrl}'>See source </a> <img class='githubsmall' src='/icons/githubsmall.png'></button>
+<button class="dynamic-live-btn" type='button'><img class='exportsmall' src='icons/exportsmall.svg'><a class='url-source-btn' href='${names[index].liveUrl}'>See live </a> </button>
+<button class="dynamic-source-btn" type='button'  ><a class='url-source-btn' href='${names[index].sourceUrl}'>See source </a> <img class='githubsmall' src='icons/githubsmall.png'></button>
 </div>
 </div>
 </div>
