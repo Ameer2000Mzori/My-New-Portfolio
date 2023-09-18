@@ -732,6 +732,8 @@ body.active {
 @media (max-width: 700px) {
   .dynamic-skill-card {
     position: fixed;
+    width: 343px;
+    height: clamp(300px, 100%, 663px);
     border-radius: 15px;
     padding: 5px;
     border: solid;
@@ -739,8 +741,7 @@ body.active {
     border-color: #dfe1e6;
     top: 30px;
     left: 10px;
-    width: 343px;
-    height: 763px;
+
     background-color: #fff;
     filter: drop-shadow(0 0 10rem #c1c7d0);
   }
