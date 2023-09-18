@@ -10,6 +10,7 @@ body {
 
 body.active {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -729,7 +730,7 @@ body.active {
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .dynamic-skill-card {
     position: fixed;
     width: 343px;
@@ -741,7 +742,6 @@ body.active {
     border-color: #dfe1e6;
     top: 30px;
     left: 10px;
-
     background-color: #fff;
     filter: drop-shadow(0 0 10rem #c1c7d0);
   }
