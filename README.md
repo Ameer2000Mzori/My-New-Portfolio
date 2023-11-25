@@ -1,4 +1,3 @@
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -17,22 +16,26 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 My Portafolio <a name="about-project"></a>
+# 📖 About This Project <a name="about-project"></a>
 
->This is my website portfolio, made with HTML, CSS, and JavaScript. and it's a multi-page responsive website. it's a whole website made for desktop and mobile versions.
+> My New Portfolio is my live portfolio website created with HTML, CSS, and JavaScript, using listeners to overcome code errors. Please check out the live demo or view the sample images.
+
+# Sample Of Website <a name="Sample-Of-Website"></a>
+
+![alt text](./sample/1.png)
+![alt text](./sample/2.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
 <details>
   <summary>Client</summary>
   <ul>
-        <li><a href="https://en.wikipedia.org/wiki/HTML">Html</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
-        <li><a href="https://nl.wikipedia.org/wiki/JavaScript">Javascript</a></li>
-    
+  <li><a href="https://en.wikipedia.org/wiki/HTML">Html</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></li>
+
   </ul>
 </details>
 
@@ -40,8 +43,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[multi-page responsive website]**
-- **[flex & grid]**
+- **[Responsive Website]**
+- **[Flex & Grid]**
+- **[CSS ]**
+- **[JS ]**
+- **[Clean Code]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,7 +57,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://ameer2000mzori.github.io/My-new-portfolio/)
+- [Live Demo Link](https://ameer2000mzori.github.io/My-New-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,7 +69,6 @@
 
 - GitHub: [@Ameer2000Mzori](https://github.com/Ameer2000Mzori)
 - LinkedIn: [Ameer Ameen](https://www.linkedin.com/in/ameer-ameen-82314425b/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +86,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project, don't hesitate to give it a star 😊.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,8 +93,6 @@ If you like this project, don't hesitate to give it a star 😊.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse team for the resources.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
