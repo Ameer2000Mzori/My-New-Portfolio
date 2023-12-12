@@ -537,8 +537,9 @@ body.active {
   border: solid;
   border-width: 1px;
   border-color: #dfe1e6;
-  top: 25px;
-  left: 367px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   filter: drop-shadow(0 0 10rem #c1c7d0);
 }
